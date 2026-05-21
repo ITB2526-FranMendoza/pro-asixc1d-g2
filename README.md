@@ -1,23 +1,43 @@
 # pro-asixc1d-g2
-# Proyecto Transversal ASIX 25/26
+# Proyecto Transversal ASIX 25/26 — InnovateTech
 
 ## Integrantes
-- Fran
-- Jeremy
-- Rubén
-- Gerard
+- Jeremy Ruiz
+- Fran Mendoza
+- Rubén Mateos
+- Gerard Romo
 
-## Tecnologías utilizadas
-- AWS EC2
-- NGINX RTMP
-- Icecast2
-- Jitsi Meet
-- MariaDB
-- Samba AD
-- pfSense
+---
 
-## Documentación
-- [CPD](docs/CPD/cpd.md)
-- [Audio](docs/Audio/audio.md)
-- [Video](docs/Video/video.md)
-- [Base de Datos](docs/BaseDatos/bdd.md)
+# Descripción
+
+Diseño e implementación de una infraestructura híbrida para InnovateTech basada en:
+
+- CPD físico
+- Infraestructura AWS
+- Servicios multimedia
+- Base de datos empresarial
+- Seguridad física y lógica
+- Streaming de audio y vídeo
+- Videoconferencia
+
+---
+
+# Índice
+
+## 1. CPD
+- [Diseño del CPD](docs/cpd/cpd.md)
+
+## 2. AWS
+- [Infraestructura AWS](docs/aws/aws.md)
+
+## 3. Redes
+- [Red y VLANs](docs/xarxes/xarxa.md)
+
+## 4. Streaming
+- [Audio Icecast](docs/streaming/audio.md)
+- [Vídeo NGINX RTMP](docs/streaming/video.md)
+- [Jitsi Meet](docs/streaming/jitsi.md)
+
+## 5. Bases de Datos
+- [Base de datos](docs/bdd/bdd.md)
