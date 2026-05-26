@@ -20,7 +20,6 @@ La sala del CPD ha sido diseñada en una planta baja sin ventanas, con acceso re
 - Videovigilancia permanente.
 - Sistemas antiincendios.
 
-### 📸 CAPTURA
 <img width="1256" height="846" alt="image" src="https://github.com/user-attachments/assets/9566be26-582f-495b-8ffb-83c458d79ded" />
 
 ---
@@ -41,7 +40,6 @@ El CPD incorpora un sistema de refrigeración redundante N+1 para garantizar fun
 
 Además, se utilizan filtros HEPA para reducir polvo y partículas en suspensión.
 
-### 📸 CAPTURA
 <img width="1042" height="410" alt="image" src="https://github.com/user-attachments/assets/7288027a-d71a-42e2-8a1c-a1e345158031" />
 
 ---
@@ -64,7 +62,6 @@ Cada conexión incluye:
 - Puerto utilizado.
 - Destino de conexión.
 
-### 📸 CAPTURA
 <img width="1203" height="805" alt="image" src="https://github.com/user-attachments/assets/822a773c-b849-4452-8070-786ffab3a619" />
 
 ---
@@ -107,7 +104,6 @@ Contiene:
 - Patch panels.
 - PDU y SAI.
 
-### 📸 CAPTURA
 <img width="561" height="860" alt="image" src="https://github.com/user-attachments/assets/55459c2f-ca5b-4f1f-beba-982825a53507" />
 
 ---
@@ -125,7 +121,6 @@ Contiene:
 - Base de datos.
 - Backup y monitorización.
 
-### 📸 CAPTURA
 <img width="536" height="976" alt="image" src="https://github.com/user-attachments/assets/e6aa7e8d-95e2-44b7-b9ff-a4d09e7bf745" />
 
 ---
@@ -140,7 +135,6 @@ Contiene:
 - MikroTik.
 - UPS APC.
 
-### 📸 CAPTURA
 <img width="734" height="932" alt="image" src="https://github.com/user-attachments/assets/982bab54-7788-4296-b037-b892ff8bc6c8" />
 
 ---
@@ -156,6 +150,8 @@ La propuesta incorpora medidas de protección tanto físicas como lógicas.
 - Sistemas antiincendios.
 - Vías de evacuación.
 - Señalización de emergencia.
+  
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8ebdfc9c-7364-4480-9f37-c5ab00386e42" />
 
 ## Seguridad lógica
 
@@ -166,7 +162,6 @@ La propuesta incorpora medidas de protección tanto físicas como lógicas.
 - Centralización de logs.
 - Monitorización continua.
 
-### 📸 CAPTURA
 <img width="567" height="418" alt="image" src="https://github.com/user-attachments/assets/38e1b372-818f-40ed-9956-952d73a0fac2" />
 
 ---
@@ -188,7 +183,6 @@ La infraestructura cloud se ha desplegado sobre AWS utilizando instancias EC2 in
 | Videoconferencia | Jitsi Meet |
 | Base de Datos | MariaDB |
 
-### 📸 CAPTURA
 <img width="824" height="657" alt="image" src="https://github.com/user-attachments/assets/cb89293d-8fc5-42a2-b975-7206cf503a39" />
 
 ---
