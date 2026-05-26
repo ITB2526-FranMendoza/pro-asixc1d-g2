@@ -44,7 +44,7 @@ Diseño e implementación de una infraestructura híbrida para InnovateTech basa
 
 ## ESTRUCTURA OFICIAL  (SIN ACTUALIZAR)
 
-``
+
 docs/
 │
 ├── cpd/
@@ -68,4 +68,4 @@ docs/
     ├── red/
     ├── aws/
     └── ansible/
-    ``
+
