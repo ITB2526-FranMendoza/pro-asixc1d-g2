@@ -151,7 +151,8 @@ La propuesta incorpora medidas de protección tanto físicas como lógicas.
 - Vías de evacuación.
 - Señalización de emergencia.
   
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8ebdfc9c-7364-4480-9f37-c5ab00386e42" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1b387f30-0933-4b51-ac57-d2b072b6f574" />
+
 
 ## Seguridad lógica
 
