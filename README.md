@@ -32,7 +32,7 @@ Diseño e implementación de una infraestructura híbrida para InnovateTech basa
 - [Infraestructura AWS](docs/aws/aws.md)
 
 ## 3. Redes
-- [Red y VLANs](docs/xarxes/xarxa.md)
+- [Red y VLANs](docs/redes/xarxa.md)
 
 ## 4. Streaming
 - [Audio Icecast](docs/streaming/audio.md)
@@ -64,9 +64,8 @@ docs/
 ├── bdd/
 │   └── bdd.md
 │
-└── img/
-    ├── racks/
+└── tests/ 
     ├── red/
     ├── aws/
-    └── cpd/
+    └── ansible/
     ``
