@@ -140,7 +140,6 @@ ffmpeg -re -stream_loop -1 -i /home/ubuntu/video.mp4 \
 | Streaming | RTMP |
 | Distribución web | HLS |
 
-### 📸 CAPTURA
 <img width="818" height="751" alt="image" src="https://github.com/user-attachments/assets/ec770283-b55a-4f6f-9a16-3cc401808606" />
 <img width="817" height="566" alt="image" src="https://github.com/user-attachments/assets/a0a441ae-00bb-48ca-992b-2ae011408c1d" />
 
