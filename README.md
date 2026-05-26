@@ -2,10 +2,10 @@
 # Proyecto Transversal ASIX 25/26 — InnovateTech
 
 ## Información Relevante
-Integrantes: Fran Mendoza, Jeremy Ruiz, Rubén Mateos, Gerard Romo
-Ciclo: CFGS ASIX Perfil Ciberseguridad
-Centro: Institut Tecnològic de Barcelona
-Defensa del proyecto: 29/05/2026
+- Integrantes: Fran Mendoza, Jeremy Ruiz, Rubén Mateos, Gerard Romo
+- Ciclo: CFGS ASIX Perfil Ciberseguridad
+- Centro: Institut Tecnològic de Barcelona
+- Defensa del proyecto: 29/05/2026
 
 ---
 
