@@ -44,7 +44,7 @@ nginx -v
 ffmpeg -version
 ```
 
-### 📸 CAPTURA NECESARIA
+### 📸 CAPTURA
 <img width="410" height="52" alt="image" src="https://github.com/user-attachments/assets/df0f0d1d-fafd-45a1-8615-457818c7c38f" />
 <img width="807" height="394" alt="image" src="https://github.com/user-attachments/assets/bbfd6f19-ba7b-4c48-a691-2f73af27a6c7" />
 
@@ -178,7 +178,7 @@ http://IP_PUBLICA_AWS/hls/stream.m3u8
 ```
 --> EN NUESTRO CASO LA IP PÚBLICA SERIA 13.60.54.35
 
-### 📸 CAPTURA NECESARIA
+### 📸 CAPTURA
 <img width="741" height="615" alt="image" src="https://github.com/user-attachments/assets/bb51b228-8e69-49e1-9085-f789804c3a37" />
 
 ---
