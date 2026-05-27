@@ -265,5 +265,3 @@ Se realiza además un **simulacro de evacuación anual** y se mantiene un regist
 - Los pasillos frío y caliente deben mantenerse siempre despejados para garantizar el flujo de aire de climatización.
 
 ---
-
-*Documentación generada para el Proyecto Transversal ASIXc1 — Curs 25/26 — Institut Tecnològic de Barcelona*
