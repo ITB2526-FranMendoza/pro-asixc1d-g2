@@ -188,7 +188,7 @@ La infraestructura cloud se ha desplegado sobre AWS utilizando instancias EC2 in
 
 ---
 
-# 5. Prevención de Riesgos Laborales (PRL)
+# 9. Prevención de Riesgos Laborales (PRL)
 
 ## Normativa aplicable
 
