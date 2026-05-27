@@ -187,3 +187,83 @@ La infraestructura cloud se ha desplegado sobre AWS utilizando instancias EC2 in
 <img width="824" height="657" alt="image" src="https://github.com/user-attachments/assets/cb89293d-8fc5-42a2-b975-7206cf503a39" />
 
 ---
+
+# 5. Prevención de Riesgos Laborales (PRL)
+
+## Normativa aplicable
+
+- Ley 31/1995 de Prevención de Riesgos Laborales
+- Real Decreto 486/1997 — condiciones mínimas de seguridad en lugares de trabajo
+- Reglamento Electrotécnico de Baja Tensión (REBT)
+
+---
+
+## Riesgos identificados
+
+| Riesgo | Causa | Personal afectado |
+|---|---|---|
+| Eléctrico | Cableado, PDUs, SAI/UPS | Técnicos de mantenimiento |
+| Incendio | Calor de servidores, cortocircuitos | Todo el personal |
+| Sobrecarga postural | Instalación de equipos en rack | Técnicos de sistemas |
+| Exposición al ruido | Ventiladores y climatización | Personal en sala |
+| Caídas | Cables mal gestionados en suelo técnico | Todo el personal |
+| Riesgo térmico | Temperatura elevada en pasillos calientes | Técnicos en sala |
+| Agentes químicos | Gas FM-200 del sistema de extinción | Todo el personal |
+
+---
+
+## Medidas preventivas
+
+**Señalización**
+La sala dispone de señalización normalizada según la norma ISO 7010, visible y permanente en todos los puntos de acceso y zonas de riesgo.
+
+**Evacuación**
+- La puerta del CPD abre hacia el exterior para facilitar la salida rápida.
+- Señalización luminiscente visible sin electricidad.
+- Iluminación de emergencia automática ante corte de suministro.
+- Tiempo de evacuación estimado: menos de 3 minutos.
+- El sistema de extinción FM-200 tiene un retardo de 30 segundos con alarma acústica y luminosa previa a la descarga, dando tiempo al personal para evacuar.
+
+**EPI obligatorios**
+- Guantes aislantes
+- Calzado de seguridad con suela aislante
+
+---
+
+## Mantenimiento periódico
+
+| Tarea | Frecuencia | Responsable |
+|---|---|---|
+| Revisión sistema eléctrico (PDUs, SAI) | Trimestral | Técnico eléctrico |
+| Limpieza filtros HEPA climatización | Mensual | Técnico de sistemas |
+| Prueba sistema extinción FM-200 | Anual | Empresa de mantenimiento |
+| Revisión salidas emergencia e iluminación | Semestral | Responsable PRL |
+| Inspección cableado y organización racks | Trimestral | Técnico de sistemas |
+| Test descarga SAI/UPS | Semestral | Técnico eléctrico |
+| Revisión sensores ambientales | Mensual | Técnico de sistemas |
+
+---
+
+## Formación del personal
+
+Todo el personal con acceso al CPD recibe formación obligatoria antes de trabajar en la sala:
+
+- Riesgos específicos del CPD: eléctrico, incendio, gas FM-200 y ergonómico
+- Procedimiento de evacuación y punto de reunión
+- Actuación ante activación del sistema de extinción automática
+- Normas de acceso y orden en sala
+- Uso correcto de EPIs
+
+Se realiza además un **simulacro de evacuación anual** y se mantiene un registro documental de la formación recibida por cada trabajador.
+
+---
+
+## Normas de orden en sala
+
+- Prohibido dejar herramientas o material fuera de su lugar de almacenamiento.
+- Tras cada intervención, el técnico debe dejar la sala en el mismo estado en que la encontró.
+- Los pasillos frío y caliente deben mantenerse siempre despejados para garantizar el flujo de aire de climatización.
+
+---
+
+*Documentación generada para el Proyecto Transversal ASIXc1 — Curs 25/26 — Institut Tecnològic de Barcelona*
