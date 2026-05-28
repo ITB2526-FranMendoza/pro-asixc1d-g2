@@ -1,15 +1,15 @@
 # CPD — InnovateTech
 ## Índice
 
-1. [Descripción del servicio](#1-diseño-del-cpd)
-2. [Tecnologías utilizadas](#2-ubicación-física-del-cpd)
-3. [Infraestructura AWS](#3-climatización-y-control-ambiental)
-4. [Arquitectura del sistema de audio](#4-distribución-y-gestión-del-cableado)
-5. [Configuración Icecast2](#5-infraestructura-eléctrica)
-6. [Configuración Liquidsoap](#6-estructura-de-racks)
-7. [Seguridad](#7-seguridad-físicaa-y-lógica)
-8. [Verificación del servicio](#8-infraestructura-aws)
-9. [Capturas de evidencia](#9-prevención-de-riesgos-laborales)
+1. [Diseño del CPD](#1-diseño-del-cpd)
+2. [Ubicación física del CPD](#2-ubicación-física-del-cpd)
+3. [Climatización y control ambiental](#3-climatización-y-control-ambiental)
+4. [Distribución y gestión del cableado](#4-distribución-y-gestión-del-cableado)
+5. [Infraestructura eléctrica](#5-infraestructura-eléctrica)
+6. [Estructura de racks](#6-estructura-de-racks)
+7. [Seguridad física y lógica](#7-seguridad-físicaa-y-lógica)
+8. [Infraestructura AWS](#8-infraestructura-aws)
+9. [Prevención de Riesgos Laborales](#9-prevención-de-riesgos-laborales)
 
 # 1. Diseño del CPD
 
