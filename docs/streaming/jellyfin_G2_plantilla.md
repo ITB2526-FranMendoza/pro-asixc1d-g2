@@ -187,5 +187,3 @@ stream-19629.ts  stream-19636.ts  stream-19643.ts  stream-19650.ts  stream.m3u8
 | AWS SG    | ✅ Configurado  | 8096   | Abierto desde 0.0.0.0/0           |
 
 ---
-
-*Documentación elaborada por el Grupo 2 — Proyecto Transversal*
