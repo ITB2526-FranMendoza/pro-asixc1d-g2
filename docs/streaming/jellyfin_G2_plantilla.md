@@ -91,11 +91,6 @@ sudo mkdir -p /srv/jellyfin/media/videos
 sudo chown -R jellyfin:jellyfin /srv/jellyfin/media
 ```
 
-**Salida del terminal:**
-```
-# Pegar aquí la salida
-```
-
 ### 4.2 Creación de la biblioteca desde el panel
 
 Ruta: **Dashboard → Bibliotecas → Añadir biblioteca**
