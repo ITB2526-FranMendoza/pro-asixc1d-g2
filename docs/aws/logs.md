@@ -1,6 +1,27 @@
 # SERVIDOR DE LOGS (Elastic y Kibana)
-
 > Servicio de centralización de logs desplegado en AWS EC2 con Elasticsearch, Kibana y Filebeat.
+## Índice
+
+- [1. Creación del usuario, asignación del password y permisos](#1-creación-del-usuario-asignación-del-password-y-permisos)
+- [2. Instalación de Elasticsearch i Kibana](#2-instalación-de-elasticsearch-i-kibana)
+- [3. Descomprimir los ficheros comprimidos y asignar los permisos](#3-descomprimir-los-ficheros-comprimidos-y-asignar-los-permisos)
+- [4. Iniciar elastic](#4-iniciar-elastic)
+- [5. Configuración de Kibana](#5-configuración-de-kibana)
+- [6. Arrancamos kibana-setup](#6-arrancamos-kibana-setup)
+- [7. Arrancamos Kibana](#7-arrancamos-kibana)
+- [8. Probamos que se puede entrar a kibana y que registra logs](#8-probamos-que-se-puede-entrar-a-kibana-y-que-registra-logs)
+
+### Centralización con Filebeat
+
+- [1. Descargamos el repositorio de Filebeat](#1-descargamos-el-repositorio-de-filebeat)
+- [2. Instalamos el Filebeat](#2-instalamos-el-filebeat)
+- [3. Configuramos Filebeat y verificamos que la config está bien](#3-configuramos-filebeat-y-verificamos-que-la-config-está-bien)
+- [4. Ejecutamos Filebeat Setup para que cargue los dashboards](#4-ejecutamos-filebeat-setup-para-que-cargue-los-dashboards)
+- [5. Reiniciamos el servicio y comprobamos que registre los logs en kibana](#5-reiniciamos-el-servicio-y-comprobamos-que-registre-los-logs-en-kibana)
+- [6. Prueba de que kibana recibe registra acciones de mi máquina](#6-prueba-de-que-kibana-recibe-registra-acciones-de-mi-máquina)
+- [7. Implantación de Filebeat en las máquinas de nuestro equipo](#7-implantación-de-filebeat-en-las-máquinas-de-nuestro-equipo)
+- [7.1 Antes de implantarlo en las máquinas de mis compañeros verifiqué que funcionaba correctamente en mis máquinas](#71-antes-de-implantarlo-en-las-máquinas-de-mis-compañeros-verifiqué-que-funcionaba-correctamente-en-mis-máquinas)
+- [Conclusión](#conclusión)
 
 ## 1. Creación del usuario, asignación del password y permisos
 
