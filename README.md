@@ -56,8 +56,9 @@ docs/
  │   ├── ansible.md/
  │   └── aws.md
  │
- ├── xarxes/
- │   └── xarxa.md
+ ├── redes/
+ │   ├── Ancho_Banda.md
+ │   └── redes.md
  │
  ├── streaming/
  │   ├── audio.md
