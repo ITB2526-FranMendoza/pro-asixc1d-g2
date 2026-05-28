@@ -60,8 +60,8 @@ nginx -v
 ffmpeg -version
 ```
 
-<img width="410" height="52" alt="image" src="https://github.com/user-attachments/assets/df0f0d1d-fafd-45a1-8615-457818c7c38f" />
-<img width="807" height="394" alt="image" src="https://github.com/user-attachments/assets/bbfd6f19-ba7b-4c48-a691-2f73af27a6c7" />
+<img width="341" height="44" alt="image" src="https://github.com/user-attachments/assets/ee2640be-156e-4620-95ca-9a5f3f29d13b" />
+<img width="1850" height="328" alt="image" src="https://github.com/user-attachments/assets/f2d46348-827b-439b-9f6f-15235c74f040" />
 
 ---
 
@@ -128,7 +128,7 @@ sudo systemctl enable nginx
 sudo systemctl status nginx
 ```
 
-<img width="807" height="294" alt="image" src="https://github.com/user-attachments/assets/97a33d4e-4a43-42aa-9252-d6993ab2187f" />
+<img width="679" height="333" alt="image" src="https://github.com/user-attachments/assets/a926ec20-6e20-4024-99f4-1bcc5e04e211" />
 
 ---
 
@@ -157,8 +157,8 @@ ffmpeg -re -stream_loop -1 -i /home/ubuntu/video.mp4 \
 | Streaming | RTMP |
 | Distribución web | HLS |
 
-<img width="818" height="751" alt="image" src="https://github.com/user-attachments/assets/ec770283-b55a-4f6f-9a16-3cc401808606" />
-<img width="817" height="566" alt="image" src="https://github.com/user-attachments/assets/a0a441ae-00bb-48ca-992b-2ae011408c1d" />
+<img width="1849" height="1008" alt="image" src="https://github.com/user-attachments/assets/2ebbf030-210d-4590-98f7-d29a1c8e06d1" />
+<img width="1841" height="541" alt="image" src="https://github.com/user-attachments/assets/c3ee4e95-9ede-4246-aea2-d7e3edcd7984" />
 
 ---
 
@@ -206,7 +206,7 @@ http://IP_PUBLICA_AWS/hls/stream.m3u8
 - Acceso remoto funcional desde clientes externos.
 
 - Ficheros HLS generados:
-<img width="776" height="123" alt="image" src="https://github.com/user-attachments/assets/a244e6b7-b0d7-4ed3-8f37-4e17e0d9a56e" />
+<img width="1615" height="394" alt="image" src="https://github.com/user-attachments/assets/79277c95-8551-4f8f-b755-bd17e6723e1f" />
 
 ## Resultado
 
