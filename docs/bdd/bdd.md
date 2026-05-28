@@ -28,7 +28,7 @@ Se comprobó que el servicio estuviera funcionando correctamente:
 sudo systemctl status mariadb
 ```
 
-<img width="455" height="229" alt="Captura de pantalla 2026-05-27 234547" src="https://github.com/user-attachments/assets/e81d8365-7f2d-4aa4-a64e-636d93000dbb" />
+> <img width="455" height="229" alt="Captura de pantalla 2026-05-27 234547" src="https://github.com/user-attachments/assets/e81d8365-7f2d-4aa4-a64e-636d93000dbb" />
 
 
 ---
@@ -53,7 +53,7 @@ Y se seleccionó la base de datos:
 USE innovatetech_db;
 ```
 
-<img width="478" height="280" alt="Captura de pantalla 2026-05-27 234658" src="https://github.com/user-attachments/assets/75865993-c49e-47bc-aab8-08716ccdb039" />
+> <img width="478" height="280" alt="Captura de pantalla 2026-05-27 234658" src="https://github.com/user-attachments/assets/75865993-c49e-47bc-aab8-08716ccdb039" />
 
 
 ---
@@ -75,12 +75,12 @@ Se verificó que las tablas y los datos se hubieran creado correctamente:
 ```sql
 SHOW TABLES;
 ```
-<img width="359" height="497" alt="Captura de pantalla 2026-05-27 235408" src="https://github.com/user-attachments/assets/d85477ed-753b-4a2c-82bc-7984ca044cba" />
+> <img width="359" height="497" alt="Captura de pantalla 2026-05-27 235408" src="https://github.com/user-attachments/assets/d85477ed-753b-4a2c-82bc-7984ca044cba" />
 
 ```sql
 SELECT * FROM CLIENTES;
 ```
-<img width="800" height="222" alt="Captura de pantalla 2026-05-27 235514" src="https://github.com/user-attachments/assets/2a27ddf2-7096-4373-bef8-3d767a6e7b65" />
+> <img width="800" height="222" alt="Captura de pantalla 2026-05-27 235514" src="https://github.com/user-attachments/assets/2a27ddf2-7096-4373-bef8-3d767a6e7b65" />
 
 
 ---
@@ -114,7 +114,7 @@ Se verificaron los permisos con:
 SHOW GRANTS FOR 'ruben'@'localhost';
 ```
 
-<img width="1009" height="216" alt="Captura de pantalla 2026-05-27 235927" src="https://github.com/user-attachments/assets/0ac07614-3905-4545-85a7-ade3e922a60a" />
+> <img width="1009" height="216" alt="Captura de pantalla 2026-05-27 235927" src="https://github.com/user-attachments/assets/0ac07614-3905-4545-85a7-ade3e922a60a" />
 
 
 ---
@@ -137,7 +137,7 @@ También genera el fichero:
 crear_usuario.sql
 ```
 
-<img width="385" height="169" alt="image" src="https://github.com/user-attachments/assets/7610df5a-ceb7-408a-82bd-242a4ba05bf2" />
+> <img width="385" height="169" alt="image" src="https://github.com/user-attachments/assets/7610df5a-ceb7-408a-82bd-242a4ba05bf2" />
 
 
 ---
@@ -152,7 +152,7 @@ Se verificó su funcionamiento realizando modificaciones de prueba.
 SHOW TRIGGERS;
 ```
 
-<img width="840" height="190" alt="image" src="https://github.com/user-attachments/assets/a668c5d2-bb24-4216-af3c-0a160bc281b9" />
+> <img width="840" height="190" alt="image" src="https://github.com/user-attachments/assets/a668c5d2-bb24-4216-af3c-0a160bc281b9" />
 
 
 ---
@@ -163,7 +163,7 @@ Se implementó un trigger encargado de impedir llamadas cuando el usuario está 
 
 Se comprobó su funcionamiento con una prueba real de inserción en `VIDEOLLAMADAS`.
 
-<img width="853" height="78" alt="image" src="https://github.com/user-attachments/assets/a559868c-5634-478a-bc1c-0394bbf90a54" />
+> <img width="853" height="78" alt="image" src="https://github.com/user-attachments/assets/a559868c-5634-478a-bc1c-0394bbf90a54" />
 
 
 ---
@@ -174,9 +174,9 @@ Se implementó un trigger para controlar el número máximo de videollamadas per
 
 Cuando se supera el límite, el usuario queda bloqueado automáticamente.
 
-<img width="940" height="202" alt="image" src="https://github.com/user-attachments/assets/618be96a-39a3-44e1-b41a-e6bb3aa53601" />
+> <img width="940" height="202" alt="image" src="https://github.com/user-attachments/assets/618be96a-39a3-44e1-b41a-e6bb3aa53601" />
 
-<img width="653" height="150" alt="image" src="https://github.com/user-attachments/assets/7615cbe1-a867-40dc-ba6e-a64667de308c" />
+> <img width="653" height="150" alt="image" src="https://github.com/user-attachments/assets/7615cbe1-a867-40dc-ba6e-a64667de308c" />
 
 
 ---
@@ -185,7 +185,7 @@ Cuando se supera el límite, el usuario queda bloqueado automáticamente.
 
 Se implementó un trigger para controlar el límite mensual de minutos consumidos en videollamadas.
 
-<img width="1349" height="358" alt="image" src="https://github.com/user-attachments/assets/ae57cadc-f738-44e3-b4b8-c87b8a80a4d4" />
+> <img width="1349" height="358" alt="image" src="https://github.com/user-attachments/assets/ae57cadc-f738-44e3-b4b8-c87b8a80a4d4" />
 
 
 ---
@@ -200,7 +200,7 @@ Comprobación de registros:
 SELECT * FROM AVISOS;
 ```
 
-<img width="1328" height="211" alt="image" src="https://github.com/user-attachments/assets/dd7dc44d-69ef-4235-a7f5-2f2b089728fa" />
+> <img width="1328" height="211" alt="image" src="https://github.com/user-attachments/assets/dd7dc44d-69ef-4235-a7f5-2f2b089728fa" />
 
 
 
@@ -247,10 +247,10 @@ También se consulta la tabla:
 SELECT * FROM CONTROL_BACKUPS;
 ```
 
-<img width="1251" height="87" alt="image" src="https://github.com/user-attachments/assets/957ced57-e390-4d4c-877d-1c0fbcb64a2a" />
+> <img width="1251" height="87" alt="image" src="https://github.com/user-attachments/assets/957ced57-e390-4d4c-877d-1c0fbcb64a2a" />
 
 
-<img width="730" height="114" alt="image" src="https://github.com/user-attachments/assets/484ee31c-4f7a-40ce-81b0-4b282474dfd2" />
+> <img width="730" height="114" alt="image" src="https://github.com/user-attachments/assets/484ee31c-4f7a-40ce-81b0-4b282474dfd2" />
 
 
 ---
