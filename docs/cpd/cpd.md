@@ -104,7 +104,7 @@ Contiene:
 - Patch panels.
 - PDU y SAI.
 
-<img width="561" height="860" alt="image" src="https://github.com/user-attachments/assets/55459c2f-ca5b-4f1f-beba-982825a53507" />
+<img width="708" height="840" alt="image" src="https://github.com/user-attachments/assets/aabff421-ef32-443a-a775-59d9ba67cdad" />
 
 ---
 
@@ -121,7 +121,7 @@ Contiene:
 - Base de datos.
 - Backup y monitorización.
 
-<img width="536" height="976" alt="image" src="https://github.com/user-attachments/assets/e6aa7e8d-95e2-44b7-b9ff-a4d09e7bf745" />
+<img width="448" height="888" alt="image" src="https://github.com/user-attachments/assets/317194da-c082-4bc6-bd73-39723b4bd983" />
 
 ---
 
@@ -135,7 +135,7 @@ Contiene:
 - MikroTik.
 - UPS APC.
 
-<img width="734" height="932" alt="image" src="https://github.com/user-attachments/assets/982bab54-7788-4296-b037-b892ff8bc6c8" />
+<img width="698" height="881" alt="image" src="https://github.com/user-attachments/assets/48804dda-6800-4857-900e-43ff926e30e2" />
 
 ---
 
