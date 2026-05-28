@@ -26,17 +26,17 @@ Diseño e implementación de una infraestructura híbrida para InnovateTech basa
 # Índice
 
 ## 1. CPD
-- [Diseño del CPD](docs/cpd/cpd.md)
+- [Diseño del CPD](docs/cpd/)
 
 ## 2. AWS
-- [Infraestructura AWS](docs/aws/aws.md)
+- [Infraestructura AWS](docs/aws/)
 
 ## 3. Redes
-- [Red y VLANs](docs/redes/xarxa.md)
+- [Red y VLANs](docs/redes/)
 
 ## 4. Streaming
 - [Audio Icecast](docs/streaming/audio.md)
-- [Vídeo NGINX RTMP](docs/streaming/video.md)
+- [Vídeo NGINX RTMP](docs/streaming/video-jellyfin.md)
 - [Jitsi Meet](docs/streaming/jitsi.md)
 
 ## 5. Bases de Datos
