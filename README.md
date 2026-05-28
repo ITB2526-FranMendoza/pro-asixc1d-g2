@@ -42,7 +42,7 @@ Diseño e implementación de una infraestructura híbrida para InnovateTech basa
 ## 5. Bases de Datos
 - [Base de datos](docs/bdd/bdd.md)
 
-## ESTRUCTURA OFICIAL  (SIN ACTUALIZAR)
+## ESTRUCTURA OFICIAL
 ```
 docs/
  │
@@ -61,7 +61,8 @@ docs/
  │
  ├── streaming/
  │   ├── audio.md
- │   ├── video.md
+ │   ├── video-ffmpeg.md
+ │   ├── video-jellyfin.md
  │   └── jitsi.md
  │
  ├── bdd/
