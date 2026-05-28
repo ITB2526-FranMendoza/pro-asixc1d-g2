@@ -315,21 +315,6 @@ Cada instancia dispone de un Security Group propio con reglas de mínimo privile
 | **Videoconferencia** | 10000 (WebRTC) | UDP | `0.0.0.0/0` |
 | **Base de Datos** | 3306 / 5432 | TCP | VPC CIDR |
 
-### Acceso SSH mediante clave pública
-
-El acceso administrativo a todas las instancias se realiza exclusivamente mediante par de claves RSA, sin autenticación por contraseña:
-
-```bash
-# Sintaxis general de conexión
-ssh -i <clave.pem> ec2-user@<IP_PUBLICA>
-
-# Ejemplos
-ssh -i innovatetech.pem ec2-user@13.63.204.200   # Web-SFTP
-ssh -i innovatetech.pem ec2-user@13.62.146.201   # Active Directory
-ssh -i innovatetech.pem ec2-user@13.53.152.159   # Base de Datos
-ssh -i innovatetech.pem ec2-user@13.62.220.208   # Videoconferencia
-ssh -i innovatetech.pem ec2-user@16.171.107.58   # Streaming Audio
-```
 
 ### Subred pública y privada
 
