@@ -43,7 +43,7 @@ Diseño e implementación de una infraestructura híbrida para InnovateTech basa
 - [Base de datos](docs/bdd/bdd.md)
 
 ## ESTRUCTURA OFICIAL  (SIN ACTUALIZAR)
-``
+```
 docs/
  │
  ├── cpd/
