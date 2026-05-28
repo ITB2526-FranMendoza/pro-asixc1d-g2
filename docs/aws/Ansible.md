@@ -1,7 +1,6 @@
 # Automatización con Ansible — InnovateTech
-**Proyecto Transversal 25/26**
-**Responsable:** Gerard Romo Sánchez
-**Módulo:** 0371 — Fundamentos de Hardware (Implementación AWS)
+> **Responsable:** Gerard [itb] romo sanchex  
+> **Proyecto:** Proyecto Transversal 25/26 — InnovateTech  
 
 ---
 
