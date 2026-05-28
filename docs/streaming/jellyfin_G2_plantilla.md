@@ -21,9 +21,9 @@
 Jellyfin es un servidor multimedia de código abierto que permite almacenar, organizar y reproducir contenido de vídeo, audio e imágenes. En este proyecto se ha desplegado en una instancia AWS para ofrecer un servicio de streaming de vídeo interno para un centro educativo.
 
 **Características principales:**
-- Servidor: Jellyfin vX.X.X (ver captura de versión)
-- Sistema operativo: Ubuntu Server XX.04 LTS
-- IP del servidor: `13.61.226.XX`
+- Servidor: Jellyfin
+- Sistema operativo: Ubuntu Server 22.04 LTS
+- IP del servidor: `13.61.226.79`
 - Puerto de acceso: `8096` (HTTP)
 - Protocolo de streaming: HLS (HTTP Live Streaming)
 
@@ -35,9 +35,9 @@ Jellyfin es un servidor multimedia de código abierto que permite almacenar, org
 
 | Parámetro         | Valor                   |
 |-------------------|-------------------------|
-| Tipo de instancia | `t2.micro` / `t3.small` |
+| Tipo de instancia | `t3.small`              |
 | Sistema operativo | Ubuntu Server 22.04 LTS |
-| IP pública        | `13.61.226.XX`          |
+| IP pública        | `13.61.226.79`          |
 | Puerto abierto    | TCP `8096` (0.0.0.0/0)  |
 
 ### Security Group AWS
