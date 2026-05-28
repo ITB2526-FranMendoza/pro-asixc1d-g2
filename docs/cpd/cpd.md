@@ -194,7 +194,7 @@ La infraestructura cloud se ha desplegado sobre AWS utilizando instancias EC2 in
 | Web | NGINX |
 | SFTP | OpenSSH |
 | Directorio Activo | Samba AD |
-| Logs | rsyslog + Graylog |
+| Logs | Elastic + Kibana |
 | Audio Streaming | Icecast2 |
 | Video Streaming | NGINX + RTMP |
 | Videoconferencia | Jitsi Meet |
