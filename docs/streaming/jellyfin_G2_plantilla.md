@@ -1,135 +1,135 @@
-# Servei de Vídeo — Jellyfin (RA8)
+# Servicio de Vídeo — Jellyfin (RA8)
 
 ---
 
-## Índex
+## Índice
 
-1. [Descripció del servei](#1-descripció-del-servei)
+1. [Descripción del servicio](#1-descripción-del-servicio)
 2. [Infraestructura](#2-infraestructura)
-3. [Instal·lació de Jellyfin](#3-installació-de-jellyfin)
-4. [Configuració de la biblioteca](#4-configuració-de-la-biblioteca)
-5. [Publicació del vídeo](#5-publicació-del-vídeo)
-6. [Verificació des del navegador](#6-verificació-des-del-navegador)
-7. [Instal·lació i (intent de) connexió de MariaDB](#7-installació-i-intent-de-connexió-de-mariadb)
-8. [Formats, còdecs i protocols](#8-formats-còdecs-i-protocols)
-9. [Validació final](#9-validació-final)
+3. [Instalación de Jellyfin](#3-instalación-de-jellyfin)
+4. [Configuración de la biblioteca](#4-configuración-de-la-biblioteca)
+5. [Publicación del vídeo](#5-publicación-del-vídeo)
+6. [Verificación desde el navegador](#6-verificación-desde-el-navegador)
+7. [Instalación y (intento de) conexión de MariaDB](#7-instalación-y-intento-de-conexión-de-mariadb)
+8. [Formatos, códecs y protocolos](#8-formatos-códecs-y-protocolos)
+9. [Validación final](#9-validación-final)
 
 ---
 
-## 1. Descripció del servei
+## 1. Descripción del servicio
 
-Jellyfin és un servidor multimèdia de codi obert que permet emmagatzemar, organitzar i reproduir contingut de vídeo, àudio i imatges. En aquest projecte s'ha desplegat en una instància AWS per oferir un servei de streaming de vídeo intern per a un centre educatiu.
+Jellyfin es un servidor multimedia de código abierto que permite almacenar, organizar y reproducir contenido de vídeo, audio e imágenes. En este proyecto se ha desplegado en una instancia AWS para ofrecer un servicio de streaming de vídeo interno para un centro educativo.
 
-**Característiques principals:**
-- Servidor: Jellyfin vX.X.X (vegeu captura de versió)
-- Sistema operatiu: Ubuntu Server XX.04 LTS
+**Características principales:**
+- Servidor: Jellyfin vX.X.X (ver captura de versión)
+- Sistema operativo: Ubuntu Server XX.04 LTS
 - IP del servidor: `13.61.226.XX`
-- Port d'accés: `8096` (HTTP)
-- Protocol de streaming: HLS (HTTP Live Streaming)
+- Puerto de acceso: `8096` (HTTP)
+- Protocolo de streaming: HLS (HTTP Live Streaming)
 
 ---
 
 ## 2. Infraestructura
 
-### Instància AWS
+### Instancia AWS
 
-| Paràmetre        | Valor                  |
-|------------------|------------------------|
-| Tipus d'instància | `t2.micro` / `t3.small` |
-| Sistema operatiu | Ubuntu Server 22.04 LTS |
-| IP pública       | `13.61.226.XX`         |
-| Port obert       | TCP `8096` (0.0.0.0/0) |
+| Parámetro         | Valor                   |
+|-------------------|-------------------------|
+| Tipo de instancia | `t2.micro` / `t3.small` |
+| Sistema operativo | Ubuntu Server 22.04 LTS |
+| IP pública        | `13.61.226.XX`          |
+| Puerto abierto    | TCP `8096` (0.0.0.0/0)  |
 
 ### Security Group AWS
 
-<!-- CAPTURA: Security Group amb el port 8096 obert -->
-> 📸 *Inserir captura del Security Group a AWS mostrant TCP 8096 obert des de 0.0.0.0/0*
+<!-- CAPTURA: Security Group con el puerto 8096 abierto -->
+> 📸 *Insertar captura del Security Group en AWS mostrando TCP 8096 abierto desde 0.0.0.0/0*
 
 ---
 
-## 3. Instal·lació de Jellyfin
+## 3. Instalación de Jellyfin
 
-### 3.1 Actualització del sistema i dependències
+### 3.1 Actualización del sistema y dependencias
 
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
-**Sortida del terminal:**
+**Salida del terminal:**
 ```
-# Enganxar aquí la sortida
+# Pegar aquí la salida
 ```
 
-### 3.2 Afegir repositori i instal·lar Jellyfin
+### 3.2 Añadir repositorio e instalar Jellyfin
 
 ```bash
 curl -s https://repo.jellyfin.org/install-debuntu.sh | sudo bash
 ```
 
-**Sortida del terminal:**
+**Salida del terminal:**
 ```
-# Enganxar aquí la sortida
+# Pegar aquí la salida
 ```
 
-### 3.3 Verificar que el servei està actiu
+### 3.3 Verificar que el servicio está activo
 
 ```bash
 sudo systemctl status jellyfin
 ```
 
-**Sortida del terminal:**
+**Salida del terminal:**
 ```
-# Enganxar aquí la sortida (ha de mostrar: active (running))
+# Pegar aquí la salida (debe mostrar: active (running))
 ```
 
-### 3.4 Primer accés i configuració inicial
+### 3.4 Primer acceso y configuración inicial
 
-Accés via navegador a `http://13.61.226.XX:8096`
+Acceso vía navegador a `http://13.61.226.XX:8096`
 
 <!-- CAPTURA: Pantalla de login de Jellyfin -->
-> 📸 *Inserir captura de la pantalla d'inici de sessió amb l'usuari admin*
+> 📸 *Insertar captura de la pantalla de inicio de sesión con el usuario admin*
 
 <!-- CAPTURA: Dashboard principal -->
-> 📸 *Inserir captura del dashboard principal després del login*
+> 📸 *Insertar captura del dashboard principal después del login*
 
-### 3.5 Versió instal·lada
+### 3.5 Versión instalada
 
 Ruta: **Dashboard → Sistema**
 
-<!-- CAPTURA: Dashboard > Sistema amb la versió -->
-> 📸 *Inserir captura de Dashboard → Sistema mostrant la versió instal·lada*
+<!-- CAPTURA: Dashboard > Sistema con la versión -->
+> 📸 *Insertar captura de Dashboard → Sistema mostrando la versión instalada*
 
 ---
 
-## 4. Configuració de la biblioteca
+## 4. Configuración de la biblioteca
 
-### 4.1 Creació del directori de medis
+### 4.1 Creación del directorio de medios
 
 ```bash
 sudo mkdir -p /srv/jellyfin/media/videos
 sudo chown -R jellyfin:jellyfin /srv/jellyfin/media
 ```
 
-**Sortida del terminal:**
+**Salida del terminal:**
 ```
-# Enganxar aquí la sortida
+# Pegar aquí la salida
 ```
 
-### 4.2 Creació de la biblioteca des del panell
+### 4.2 Creación de la biblioteca desde el panel
 
-Ruta: **Dashboard → Biblioteques → Afegir biblioteca**
+Ruta: **Dashboard → Bibliotecas → Añadir biblioteca**
 
-- **Tipus:** Pel·lícules o Vídeos
+- **Tipo:** Películas o Vídeos
 - **Ruta:** `/srv/jellyfin/media/videos`
 
-<!-- CAPTURA: Biblioteca creada al panell -->
-> 📸 *Inserir captura de la biblioteca creada al panell de Jellyfin*
+<!-- CAPTURA: Biblioteca creada en el panel -->
+> 📸 *Insertar captura de la biblioteca creada en el panel de Jellyfin*
 
 ---
 
-## 5. Publicació del vídeo
+## 5. Publicación del vídeo
 
-### 5.1 Descàrrega del vídeo H.264/MP4
+### 5.1 Descarga del vídeo H.264/MP4
 
 ```bash
 sudo wget -O /srv/jellyfin/media/videos/bigbuckbunny.mp4 \
@@ -137,121 +137,121 @@ sudo wget -O /srv/jellyfin/media/videos/bigbuckbunny.mp4 \
 sudo chown jellyfin:jellyfin /srv/jellyfin/media/videos/bigbuckbunny.mp4
 ```
 
-**Sortida del terminal:**
+**Salida del terminal:**
 ```
-# Enganxar aquí la sortida del wget
+# Pegar aquí la salida del wget
 ```
 
-### 5.2 Indexació automàtica
+### 5.2 Indexación automática
 
-Jellyfin indexa el vídeo automàticament un cop copiat al directori de la biblioteca.
+Jellyfin indexa el vídeo automáticamente una vez copiado al directorio de la biblioteca.
 
-<!-- CAPTURA: Vídeo apareixent a la biblioteca -->
-> 📸 *Inserir captura del vídeo "bigbuckbunny" apareixent a la secció "Recent en Pel·lícules"*
+<!-- CAPTURA: Vídeo apareciendo en la biblioteca -->
+> 📸 *Insertar captura del vídeo "bigbuckbunny" apareciendo en la sección "Reciente en Películas"*
 
 ---
 
-## 6. Verificació des del navegador
+## 6. Verificación desde el navegador
 
-### 6.1 Reproducció del vídeo
+### 6.1 Reproducción del vídeo
 
-<!-- CAPTURA: Vídeo reproduint-se -->
-> 📸 *Inserir captura del vídeo reproduint-se al navegador*
+<!-- CAPTURA: Vídeo reproduciéndose -->
+> 📸 *Insertar captura del vídeo reproduciéndose en el navegador*
 
-### 6.2 Estadístiques de reproducció (còdec H.264)
+### 6.2 Estadísticas de reproducción (códec H.264)
 
-Durant la reproducció → botó **ℹ️ Info** → **Dades de reproducció**
+Durante la reproducción → botón **ℹ️ Info** → **Datos de reproducción**
 
-<!-- CAPTURA: Estadístiques de reproducció -->
-> 📸 *Inserir captura mostrant les estadístiques amb còdec H264 Main*
+<!-- CAPTURA: Estadísticas de reproducción -->
+> 📸 *Insertar captura mostrando las estadísticas con códec H264 Main*
 
-Informació verificada:
+Información verificada:
 - **Reproductor:** Html Video Player
-- **Mètode de reproducció:** Reproducció directa
-- **Protocol:** HTTP
-- **Contenidor:** mp4
-- **Còdec de vídeo:** H264 Main
-- **Resolució:** 320x176
+- **Método de reproducción:** Reproducción directa
+- **Protocolo:** HTTP
+- **Contenedor:** mp4
+- **Códec de vídeo:** H264 Main
+- **Resolución:** 320x176
 - **Bitrate:** 629 kbps
-- **Còdec d'àudio:** AAC LC — 160 kbps — 48000 Hz
+- **Códec de audio:** AAC LC — 160 kbps — 48000 Hz
 
 ---
 
-## 7. Instal·lació i (intent de) connexió de MariaDB
+## 7. Instalación y (intento de) conexión de MariaDB
 
-### 7.1 Instal·lació del plugin des del panell
+### 7.1 Instalación del plugin desde el panel
 
-Ruta: **Dashboard → Plugins → Catàleg → MariaDB → Instal·lar**
+Ruta: **Dashboard → Plugins → Catálogo → MariaDB → Instalar**
 
 ```bash
-# Reinici de Jellyfin després d'instal·lar el plugin
+# Reinicio de Jellyfin después de instalar el plugin
 sudo systemctl restart jellyfin
 ```
 
-**Sortida del terminal:**
+**Salida del terminal:**
 ```
-# Enganxar aquí la sortida
+# Pegar aquí la salida
 ```
 
-### 7.2 Configuració de credencials
+### 7.2 Configuración de credenciales
 
-<!-- CAPTURA: Plugin MariaDB configurat i connectat -->
-> 📸 *Inserir captura del plugin configurat amb les credencials*
+<!-- CAPTURA: Plugin MariaDB configurado y conectado -->
+> 📸 *Insertar captura del plugin configurado con las credenciales*
 
-> ⚠️ **Nota:** [Indicar si la connexió va funcionar correctament o si hi va haver algun problema]
+> ⚠️ **Nota:** [Indicar si la conexión funcionó correctamente o si hubo algún problema]
 
 ---
 
-## 8. Formats, còdecs i protocols
+## 8. Formatos, códecs y protocolos
 
-### 8.1 Verificació dels segments HLS
+### 8.1 Verificación de los segmentos HLS
 
-Mentre el vídeo es reproduïa al navegador, es van verificar els segments HLS generats per Jellyfin:
+Mientras el vídeo se reproducía en el navegador, se verificaron los segmentos HLS generados por Jellyfin:
 
 ```bash
 sudo ls /var/lib/jellyfin/transcodes/
 ```
 
-**Sortida del terminal:**
+**Salida del terminal:**
 ```
 stream-19628.ts  stream-19635.ts  stream-19642.ts  stream-19649.ts ...
 stream-19629.ts  stream-19636.ts  stream-19643.ts  stream-19650.ts  stream.m3u8
 ...
 ```
 
-<!-- CAPTURA: Directori amb segments .m3u8 i .ts -->
-> 📸 *Inserir captura del directori amb els fitxers .m3u8 i .ts generats*
+<!-- CAPTURA: Directorio con segmentos .m3u8 y .ts -->
+> 📸 *Insertar captura del directorio con los ficheros .m3u8 y .ts generados*
 
-### 8.2 Resum de formats i protocols
+### 8.2 Resumen de formatos y protocolos
 
-| Element              | Valor                        |
-|----------------------|------------------------------|
-| Contenidor           | MP4                          |
-| Còdec de vídeo       | H.264 (AVC) Main             |
-| Còdec d'àudio        | AAC LC                       |
-| Protocol de streaming| HTTP / HLS                   |
-| Segments HLS         | `.ts` + manifest `.m3u8`     |
-| Mètode de reproducció| Directe (sense transcodificació) |
-
----
-
-## 9. Validació final
-
-### Resum de l'estat dels serveis
-
-| Servei       | Estat       | Port  | Observacions                  |
-|--------------|-------------|-------|-------------------------------|
-| Jellyfin     | ✅ Actiu    | 8096  | Accessible des del navegador  |
-| MariaDB      | ⚠️ Parcial  | 3306  | Plugin instal·lat             |
-| AWS SG       | ✅ Configurat | 8096 | Obert des de 0.0.0.0/0       |
-
-### Accés final verificat
-
-URL d'accés: `http://13.61.226.XX:8096`
-
-<!-- CAPTURA FINAL: Dashboard amb la biblioteca i el vídeo indexat -->
-> 📸 *Inserir captura final del dashboard mostrant el servei operatiu*
+| Elemento               | Valor                          |
+|------------------------|--------------------------------|
+| Contenedor             | MP4                            |
+| Códec de vídeo         | H.264 (AVC) Main               |
+| Códec de audio         | AAC LC                         |
+| Protocolo de streaming | HTTP / HLS                     |
+| Segmentos HLS          | `.ts` + manifiesto `.m3u8`     |
+| Método de reproducción | Directo (sin transcodificación)|
 
 ---
 
-*Documentació elaborada pel Grup 2 — Projecte Transversal*
+## 9. Validación final
+
+### Resumen del estado de los servicios
+
+| Servicio  | Estado          | Puerto | Observaciones                     |
+|-----------|-----------------|--------|-----------------------------------|
+| Jellyfin  | ✅ Activo       | 8096   | Accesible desde el navegador      |
+| MariaDB   | ⚠️ Parcial      | 3306   | Plugin instalado                  |
+| AWS SG    | ✅ Configurado  | 8096   | Abierto desde 0.0.0.0/0           |
+
+### Acceso final verificado
+
+URL de acceso: `http://13.61.226.XX:8096`
+
+<!-- CAPTURA FINAL: Dashboard con la biblioteca y el vídeo indexado -->
+> 📸 *Insertar captura final del dashboard mostrando el servicio operativo*
+
+---
+
+*Documentación elaborada por el Grupo 2 — Proyecto Transversal*
