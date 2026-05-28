@@ -1,5 +1,22 @@
 # Servicio de Vídeo — NGINX RTMP
 
+> **Responsable:** fran [itb] mendoza jimenez  
+> **Proyecto:** Proyecto Transversal 25/26 — InnovateTech  
+> **Instancia AWS:** `i-025eff8c23ec4f60a` · t3.small · eu-north-1a  
+> **IP pública:** `13.61.226.79`  
+> **IP privada:** `172.16.34.20` (VLAN 30 — Streaming)
+
+## Índice
+
+1. [Descripción del servicio](#1-descripción-del-servicio)
+2. [Infraestructura del servicio de vídeo](#2-infraestructura-del-servicio-de-vídeo)
+3. [Instalación de NGINX + RTMP](#3-instalación-de-nginx-+-rtmp)
+4. [Configuración del servicio RTMP/HLS](#4-configuración-del-servicio-rtmp/hls)
+5. [Publicación del vídeo en streaming](#5-publicación-del-vídeo-en-streaming)
+6. [Verificación desde navegador](#6-verificación-desde-navegador)
+7. [Verificación desde VLC](#7-verificación-desde-vlc)
+8. [Validación final del servicio](#8-validación-final-del-servicio)
+
 ## 1. Descripción del servicio
 
 Se ha implementado un servidor de streaming de vídeo utilizando NGINX con el módulo RTMP (Real-Time Messaging Protocol). El sistema permite recibir vídeo mediante RTMP y redistribuirlo mediante HLS (HTTP Live Streaming) para reproducción desde navegador o VLC.
