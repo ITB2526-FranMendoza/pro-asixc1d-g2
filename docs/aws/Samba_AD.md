@@ -1,4 +1,4 @@
-# EC2-2 — Active Directory (Samba AD)
+#Active Directory (Samba AD)
 
 > **Responsable:** jeremy [itb] ruiz hernandez  
 > **Proyecto:** Proyecto Transversal 25/26 — InnovateTech  
