@@ -1,4 +1,5 @@
 # Base de Datos — InnovateTech
+> Infraestructura de base de datos MariaDB desplegada sobre AWS EC2 con automatización de usuarios, auditoría y backups automáticos.
 
 ## Índice
 
