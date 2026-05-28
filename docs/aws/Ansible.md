@@ -5,6 +5,20 @@
 
 ---
 
+## Índice
+ 
+1. [Introducción](#1-introducción)
+2. [Instalación de Ansible](#2-instalación-de-ansible)
+3. [Gestión de claves SSH](#3-gestión-de-claves-ssh)
+4. [Fichero de inventario](#4-fichero-de-inventario-inventoryini)
+5. [Verificación de conectividad](#5-verificación-de-conectividad)
+6. [Playbooks de configuración](#6-playbooks-de-configuración)
+7. [Verificación general de los servicios](#7-verificación-general-de-los-servicios)
+8. [Resumen de puertos y servicios](#8-resumen-de-puertos-y-servicios)
+
+
+---
+
 ## 1. Introducción
 
 Para automatizar la gestión de los servidores de InnovateTech se ha utilizado **Ansible**, una herramienta de automatización de infraestructura que permite gestionar múltiples servidores de forma centralizada sin necesidad de instalar ningún agente en las máquinas remotas. Ansible se conecta directamente por SSH utilizando claves públicas/privadas, sin contraseña, tal como establece el enunciado del proyecto.
