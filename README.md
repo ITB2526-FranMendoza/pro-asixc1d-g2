@@ -43,27 +43,28 @@ Diseño e implementación de una infraestructura híbrida para InnovateTech basa
 - [Base de datos](docs/bdd/bdd.md)
 
 ## ESTRUCTURA OFICIAL  (SIN ACTUALIZAR)
-
+``
 docs/
-- │
-- ├── cpd/
-- │   └── cpd.md
-- │
-- ├── aws/
-- │   └── aws.md
-- │
-- ├── xarxes/
-- │   └── xarxa.md
-- │
-- ├── streaming/
-- │   ├── audio.md
-- │   ├── video.md
-- │   └── jitsi.md
-- │
-- ├── bdd/
-- │   └── bdd.md
-- │
-- └── tests/ 
+ │
+ ├── cpd/
+ │   └── cpd.md
+ │
+ ├── aws/
+ │   └── aws.md
+ │
+ ├── xarxes/
+ │   └── xarxa.md
+ │
+ ├── streaming/
+ │   ├── audio.md
+ │   ├── video.md
+ │   └── jitsi.md
+ │
+ ├── bdd/
+ │   └── bdd.md
+ │
+ └── tests/ 
      ├── red/
      ├── aws/
      └── ansible/
+```
