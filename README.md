@@ -50,6 +50,10 @@ docs/
  │   └── cpd.md
  │
  ├── aws/
+ │   ├── samba-ad.md/
+ │   ├── web-sftp.md/
+ │   ├── logs.md/
+ │   ├── ansible.md/
  │   └── aws.md
  │
  ├── xarxes/
@@ -65,6 +69,5 @@ docs/
  │
  └── tests/ 
      ├── red/
-     ├── aws/
-     └── ansible/
+     └── aws/
 ```
