@@ -1,4 +1,8 @@
 # CPD — InnovateTech
+
+> **Responsable:** fran [itb] mendoza jimenez  
+> **Proyecto:** Proyecto Transversal 25/26 — InnovateTech  
+
 ## Índice
 
 1. [Diseño del CPD](#1-diseño-del-cpd)
