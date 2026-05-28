@@ -1,5 +1,24 @@
 # Base de Datos — InnovateTech
 
+## Índice
+
+1. [Descripción general](#1-descripción-general)  
+2. [Instalación de MariaDB](#2-instalación-de-mariadb)  
+3. [Creación de la base de datos](#3-creación-de-la-base-de-datos)  
+4. [Creación de tablas y carga de datos](#4-creación-de-tablas-y-carga-de-datos)  
+5. [Roles y permisos](#5-roles-y-permisos)  
+6. [Script automático de usuarios](#6-script-automático-de-usuarios)  
+7. [Trigger de auditoría](#7-trigger-de-auditoría)  
+8. [Trigger de bloqueo de usuarios](#8-trigger-de-bloqueo-de-usuarios)  
+9. [Trigger de límite de llamadas diarias](#9-trigger-de-límite-de-llamadas-diarias)  
+10. [Trigger de minutos mensuales](#10-trigger-de-minutos-mensuales)  
+11. [Sistema de auditoría](#11-sistema-de-auditoría)  
+12. [Backups automáticos](#12-backups-automáticos)  
+13. [Scripts utilizados](#13-scripts-utilizados)  
+14. [Conclusión](#14-conclusión)
+
+---
+
 ## 1. Descripción general
 
 En este apartado se documenta la implementación de la base de datos de InnovateTech utilizando MariaDB sobre AWS EC2.
