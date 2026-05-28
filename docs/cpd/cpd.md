@@ -14,6 +14,7 @@
 7. [Seguridad física y lógica](#7-seguridad-física-y-lógica)
 8. [Infraestructura AWS](#8-infraestructura-aws)
 9. [Prevención de Riesgos Laborales](#9-prevención-de-riesgos-laborales)
+10. [Backups y tolerancia a fallos](#10-backups-y-tolerancia-a-fallos)
 
 # 1. Diseño del CPD
 
@@ -280,3 +281,60 @@ Se realiza además un **simulacro de evacuación anual** y se mantiene un regist
 - Los pasillos frío y caliente deben mantenerse siempre despejados para garantizar el flujo de aire de climatización.
 
 ---
+
+## 10. Backups y tolerancia a fallos
+
+La infraestructura de InnovateTech incorpora diferentes mecanismos de tolerancia a fallos y recuperación de datos con el objetivo de garantizar la continuidad del servicio y minimizar la pérdida de información ante incidencias críticas.
+
+### Backups automáticos
+
+Se realizan copias de seguridad automáticas de los servicios críticos de la infraestructura, incluyendo bases de datos, configuraciones de servidores y archivos importantes del sistema. Los backups se ejecutan de forma periódica y se almacenan en un servidor NAS dedicado para mejorar la disponibilidad y recuperación de los datos.
+
+**Tecnologías utilizadas:**
+
+* Synology NAS RS1221+
+* Bacula
+* Scripts automatizados Bash
+* Almacenamiento RAID 1
+
+### Snapshots en AWS
+
+Además de los backups locales, se utilizan snapshots de AWS sobre las instancias EC2 y volúmenes EBS. Esto permite restaurar rápidamente máquinas virtuales completas en caso de fallo, corrupción del sistema o pérdida accidental de información.
+
+**Tecnologías utilizadas:**
+
+* AWS EC2
+
+### RAID 1
+
+Los sistemas de almacenamiento utilizan configuración RAID 1, basada en el mirroring de discos. Esta tecnología duplica la información en dos discos diferentes, garantizando la disponibilidad de los datos incluso si uno de los discos falla físicamente.
+
+**Ventajas principales:**
+
+* Alta disponibilidad
+* Redundancia de datos
+* Recuperación rápida ante fallos físicos
+* Protección frente a pérdida de información
+
+### Redundancia y tolerancia a fallos
+
+La infraestructura ha sido diseñada siguiendo criterios de alta disponibilidad. El cableado eléctrico y el cableado de datos se distribuyen mediante canalizaciones independientes y por lados diferentes del rack, reduciendo interferencias electromagnéticas y evitando puntos únicos de fallo.
+
+Además, el CPD incorpora:
+
+* Sistemas SAI/UPS
+* Alimentación redundante
+* Refrigeración N+1
+* Monitorización centralizada
+* Segmentación mediante VLANs
+
+### Recuperación de datos
+
+En caso de incidencia, la recuperación de datos puede realizarse mediante restauración de backups locales o recuperación de snapshots almacenados en AWS. Esto permite reducir el tiempo de inactividad y asegurar la continuidad operativa de los servicios empresariales.
+
+**Objetivos de recuperación:**
+
+* Garantizar la integridad de los datos
+* Mantener la disponibilidad de los servicios críticos
+* Permitir restauraciones rápidas y seguras
+
