@@ -181,7 +181,7 @@ http://IP_PUBLICA_AWS/hls/stream.m3u8
 
 ---
 
-# 6. Verificación desde VLC
+# 7. Verificación desde VLC
 
 Se ha validado la reproducción del stream desde VLC utilizando la URL:
 
@@ -194,7 +194,7 @@ http://IP_PUBLICA_AWS/hls/stream.m3u8
 
 ---
 
-# 7. Validación final del servicio
+# 8. Validación final del servicio
 
 ## Comprobaciones realizadas
 
