@@ -101,8 +101,6 @@ Contiene:
 - Switch Core Cisco Catalyst.
 - Firewall pfSense.
 - Router MikroTik.
-- Patch panels.
-- PDU y SAI.
 
 <img width="708" height="840" alt="image" src="https://github.com/user-attachments/assets/aabff421-ef32-443a-a775-59d9ba67cdad" />
 
@@ -119,9 +117,8 @@ Contiene:
 - Streaming de vídeo.
 - Jitsi Meet.
 - Base de datos.
-- Backup y monitorización.
 
-<img width="448" height="888" alt="image" src="https://github.com/user-attachments/assets/317194da-c082-4bc6-bd73-39723b4bd983" />
+<img width="449" height="867" alt="image" src="https://github.com/user-attachments/assets/5616816b-f957-42f8-97ca-88cea8bd841a" />
 
 ---
 
@@ -131,9 +128,8 @@ Contiene:
 
 - NAS Synology.
 - Dell PowerEdge.
-- pfSense.
-- MikroTik.
 - UPS APC.
+- PDU.
 
 <img width="698" height="881" alt="image" src="https://github.com/user-attachments/assets/48804dda-6800-4857-900e-43ff926e30e2" />
 
