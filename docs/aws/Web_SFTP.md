@@ -1,4 +1,4 @@
-# EC2-1 — Servidor Web + SFTP
+# Servidor Web + SFTP
 
 > **Responsable:** jeremy [itb] ruiz hernandez  
 > **Proyecto:** Proyecto Transversal 25/26 — InnovateTech  
