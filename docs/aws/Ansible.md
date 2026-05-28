@@ -28,7 +28,7 @@ Las máquinas gestionadas son las siguientes, todas desplegadas en la misma regi
 | Nombre | Función | IP pública | Región AWS |
 |---|---|---|---|
 | web-sftp | Servidor Web + SFTP | 13.60.253.209 | eu-north-1 (Estocolmo) |
-| server-audio | Servidor de Audio (Icecast2) | 16.171.107.58 | eu-north-1 (Estocolmo) |
+| server-audio | Servidor de Audio (Icecast2) | 13.62.46.183 | eu-north-1 (Estocolmo) |
 
 La máquina de control desde la que se ejecuta Ansible es el servidor propio del grupo, desplegado también en AWS con IP **16.171.115.99**.
 
