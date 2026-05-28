@@ -11,7 +11,7 @@
 4. [Distribución y gestión del cableado](#4-distribución-y-gestión-del-cableado)
 5. [Infraestructura eléctrica](#5-infraestructura-eléctrica)
 6. [Estructura de racks](#6-estructura-de-racks)
-7. [Seguridad física y lógica](#7-seguridad-físicaa-y-lógica)
+7. [Seguridad física y lógica](#7-seguridad-física-y-lógica)
 8. [Infraestructura AWS](#8-infraestructura-aws)
 9. [Prevención de Riesgos Laborales](#9-prevención-de-riesgos-laborales)
 
