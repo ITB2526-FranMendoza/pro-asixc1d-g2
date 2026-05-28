@@ -66,10 +66,6 @@ docs/
  │   ├── video-jellyfin.md
  │   └── jitsi.md
  │
- ├── bdd/
- │   └── bdd.md
- │
- └── tests/ 
-     ├── red/
-     └── aws/
+ └── bdd/
+     └── bdd.md
 ```
