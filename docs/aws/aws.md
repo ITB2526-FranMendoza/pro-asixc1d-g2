@@ -1,11 +1,11 @@
-# 🏗️ Infraestructura AWS — InnovateTech
+# Infraestructura AWS — InnovateTech
 
 > Documentación técnica de la infraestructura cloud desplegada en Amazon Web Services para el proyecto InnovateTech.  
 > Región: **eu-north-1 (Estocolmo)**
 
 ---
 
-## 📋 Índice
+## Índice
 
 - [Arquitectura Híbrida](#-arquitectura-híbrida)
 - [Servicios Desplegados](#-servicios-desplegados)
@@ -14,7 +14,7 @@
 
 ---
 
-## 🌐 Arquitectura Híbrida
+## Arquitectura Híbrida
 
 InnovateTech utiliza una infraestructura híbrida combinando CPD físico y AWS.
 
@@ -135,7 +135,7 @@ El CPD on-premise convive con instancias EC2 desplegadas en AWS (`eu-north-1`), 
 
 ---
 
-## 🖥️ Servicios Desplegados
+## Servicios Desplegados
 
 Todos los servicios corren sobre instancias EC2 en AWS (`eu-north-1`). Cada instancia está aislada y dedicada a un único rol.
 
@@ -206,7 +206,7 @@ Todos los servicios corren sobre instancias EC2 en AWS (`eu-north-1`). Cada inst
 | **IMDSv2** | Required ✅ |
 | **SO** | Linux/UNIX |
 
-> ℹ️ Tipo `c7i-flex.large` para soportar la carga de ingesta y procesado de logs.
+> Tipo `c7i-flex.large` para soportar la carga de ingesta y procesado de logs.
 
 ---
 
@@ -295,7 +295,7 @@ Dos instancias cubren el servicio de streaming de vídeo:
 
 ---
 
-## 🔒 Seguridad
+## Seguridad
 
 ### Security Groups
 
@@ -344,7 +344,7 @@ Los servicios internos como la Base de Datos y los Logs se mantienen en subredes
 
 ---
 
-## ✅ Ventajas
+## Ventajas
 
 | Ventaja | Descripción |
 |---|---|
