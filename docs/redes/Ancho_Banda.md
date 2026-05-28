@@ -399,4 +399,3 @@ Verificación del cumplimiento de los criterios de la prueba práctica (RA7 + RA
 
 ---
 
-*Documentación generada para el Proyecto Transversal 25/26 — InnovateTech | CFGS ASIXc — Módulo 0375*
