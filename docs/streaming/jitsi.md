@@ -1,4 +1,22 @@
-# Implantación del servicio de videoconferencia – RA8
+# Servicio de Videoconferencia — Jitsi Meet
+
+> Servicio de videoconferencia Jitsi Meet desplegado en AWS EC2 mediante Docker, con acceso seguro HTTPS y comunicación en tiempo real entre usuarios.
+
+## Índice
+
+1. [Descripción del servicio de videoconferencia](#1-descripción-del-servicio-de-videoconferencia)  
+2. [Infraestructura](#2-infraestructura)  
+3. [Instalación](#3-instalación)  
+4. [IP Elástica en AWS](#4-ip-elástica-en-aws)  
+5. [Dominio gratuito en No-IP](#5-dominio-gratuito-en-no-ip)  
+6. [Acceso al servicio desde el navegador](#6-acceso-al-servicio-desde-el-navegador)  
+7. [Prueba real de videoconferencia](#7-prueba-real-de-videoconferencia)  
+8. [Prueba de sonido](#8-prueba-de-sonido)  
+9. [Protocolos utilizados](#9-protocolos-utilizados)  
+10. [Incidencias detectadas y soluciones aplicadas](#10-incidencias-detectadas-y-soluciones-aplicadas)  
+11. [Conclusiones técnicas](#11-conclusiones-técnicas)
+
+---
 
 ## 1. Descripción del servicio de videoconferencia
 
