@@ -151,7 +151,7 @@ Información verificada:
 Mientras el vídeo se reproducía en el navegador, se verificaron los segmentos HLS generados por Jellyfin:
 
 ```bash
-sudo ls /var/lib/jellyfin/transcodes/
+sudo ls /var/www/html/hls
 ```
 
 **Salida del terminal:**
