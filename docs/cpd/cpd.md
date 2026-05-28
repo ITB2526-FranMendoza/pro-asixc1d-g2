@@ -134,7 +134,7 @@ Contiene:
 - Jitsi Meet.
 - Base de datos.
 
-<img width="449" height="867" alt="image" src="https://github.com/user-attachments/assets/5616816b-f957-42f8-97ca-88cea8bd841a" />
+<img width="458" height="873" alt="image" src="https://github.com/user-attachments/assets/904b23b7-22ad-4b62-98f9-d297af935a6c" />
 
 ---
 
