@@ -149,6 +149,10 @@ La propuesta incorpora medidas de protección tanto físicas como lógicas.
   
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1b387f30-0933-4b51-ac57-d2b072b6f574" />
 
+PROPUESTA DE SAI:
+
+<img width="434" height="407" alt="image" src="https://github.com/user-attachments/assets/70cb3ca4-71e8-43cb-b538-cc9686f92c31" />
+
 
 ## Seguridad lógica
 
