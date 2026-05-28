@@ -415,8 +415,6 @@ En cuanto a los servicios web, despliega Nginx con la página corporativa de Inn
 
 <img width="890" height="433" alt="image" src="https://github.com/user-attachments/assets/3e74932c-714c-4b26-8c81-9830e06c36a5" />
 
-<img width="1914" height="877" alt="image" src="https://github.com/user-attachments/assets/283093bd-86ac-4f17-9258-80c8cf97c622" />
-
 ---
 
 ### 6.2 Servidor de Audio — `03_audio.yml`
