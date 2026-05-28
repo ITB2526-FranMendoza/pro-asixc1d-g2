@@ -42,8 +42,7 @@ Jellyfin es un servidor multimedia de código abierto que permite almacenar, org
 
 ### Security Group AWS
 
-<!-- CAPTURA: Security Group con el puerto 8096 abierto -->
-> 📸 *Insertar captura del Security Group en AWS mostrando TCP 8096 abierto desde 0.0.0.0/0*
+<img width="793" height="241" alt="image" src="https://github.com/user-attachments/assets/b43cb1e4-1538-4f5d-8224-34914b3e04c3" />
 
 ---
 
@@ -55,20 +54,10 @@ Jellyfin es un servidor multimedia de código abierto que permite almacenar, org
 sudo apt update && sudo apt upgrade -y
 ```
 
-**Salida del terminal:**
-```
-# Pegar aquí la salida
-```
-
 ### 3.2 Añadir repositorio e instalar Jellyfin
 
 ```bash
 curl -s https://repo.jellyfin.org/install-debuntu.sh | sudo bash
-```
-
-**Salida del terminal:**
-```
-# Pegar aquí la salida
 ```
 
 ### 3.3 Verificar que el servicio está activo
@@ -77,27 +66,19 @@ curl -s https://repo.jellyfin.org/install-debuntu.sh | sudo bash
 sudo systemctl status jellyfin
 ```
 
-**Salida del terminal:**
-```
-# Pegar aquí la salida (debe mostrar: active (running))
-```
+<img width="955" height="445" alt="image" src="https://github.com/user-attachments/assets/ac1f7122-fe97-4f73-9e85-28edf905c565" />
 
 ### 3.4 Primer acceso y configuración inicial
 
 Acceso vía navegador a `http://13.61.226.XX:8096`
 
-<!-- CAPTURA: Pantalla de login de Jellyfin -->
-> 📸 *Insertar captura de la pantalla de inicio de sesión con el usuario admin*
-
-<!-- CAPTURA: Dashboard principal -->
-> 📸 *Insertar captura del dashboard principal después del login*
+<img width="653" height="351" alt="image" src="https://github.com/user-attachments/assets/fb907eca-6014-4db8-974a-4939e00ac86e" />
 
 ### 3.5 Versión instalada
 
 Ruta: **Dashboard → Sistema**
 
-<!-- CAPTURA: Dashboard > Sistema con la versión -->
-> 📸 *Insertar captura de Dashboard → Sistema mostrando la versión instalada*
+<img width="948" height="436" alt="image" src="https://github.com/user-attachments/assets/0f1f55bb-d67b-41e1-986e-f6fe260544b2" />
 
 ---
 
@@ -122,8 +103,7 @@ Ruta: **Dashboard → Bibliotecas → Añadir biblioteca**
 - **Tipo:** Películas o Vídeos
 - **Ruta:** `/srv/jellyfin/media/videos`
 
-<!-- CAPTURA: Biblioteca creada en el panel -->
-> 📸 *Insertar captura de la biblioteca creada en el panel de Jellyfin*
+<img width="648" height="344" alt="image" src="https://github.com/user-attachments/assets/64eb4fed-80a3-4cc7-8838-9180069fa35b" />
 
 ---
 
@@ -137,17 +117,11 @@ sudo wget -O /srv/jellyfin/media/videos/bigbuckbunny.mp4 \
 sudo chown jellyfin:jellyfin /srv/jellyfin/media/videos/bigbuckbunny.mp4
 ```
 
-**Salida del terminal:**
-```
-# Pegar aquí la salida del wget
-```
-
 ### 5.2 Indexación automática
 
 Jellyfin indexa el vídeo automáticamente una vez copiado al directorio de la biblioteca.
 
-<!-- CAPTURA: Vídeo apareciendo en la biblioteca -->
-> 📸 *Insertar captura del vídeo "bigbuckbunny" apareciendo en la sección "Reciente en Películas"*
+<img width="181" height="287" alt="image" src="https://github.com/user-attachments/assets/c9fcc6ec-0b47-486b-b32b-9748f3b95b73" />
 
 ---
 
@@ -155,15 +129,13 @@ Jellyfin indexa el vídeo automáticamente una vez copiado al directorio de la b
 
 ### 6.1 Reproducción del vídeo
 
-<!-- CAPTURA: Vídeo reproduciéndose -->
-> 📸 *Insertar captura del vídeo reproduciéndose en el navegador*
+<img width="954" height="473" alt="image" src="https://github.com/user-attachments/assets/3668828c-25ae-4138-8ed6-a820713dcd82" />
 
 ### 6.2 Estadísticas de reproducción (códec H.264)
 
 Durante la reproducción → botón **ℹ️ Info** → **Datos de reproducción**
 
-<!-- CAPTURA: Estadísticas de reproducción -->
-> 📸 *Insertar captura mostrando las estadísticas con códec H264 Main*
+<img width="283" height="315" alt="image" src="https://github.com/user-attachments/assets/ae9fb6e0-87c4-4347-93bd-dd5b39b7ff13" />
 
 Información verificada:
 - **Reproductor:** Html Video Player
@@ -174,31 +146,6 @@ Información verificada:
 - **Resolución:** 320x176
 - **Bitrate:** 629 kbps
 - **Códec de audio:** AAC LC — 160 kbps — 48000 Hz
-
----
-
-## 7. Instalación y (intento de) conexión de MariaDB
-
-### 7.1 Instalación del plugin desde el panel
-
-Ruta: **Dashboard → Plugins → Catálogo → MariaDB → Instalar**
-
-```bash
-# Reinicio de Jellyfin después de instalar el plugin
-sudo systemctl restart jellyfin
-```
-
-**Salida del terminal:**
-```
-# Pegar aquí la salida
-```
-
-### 7.2 Configuración de credenciales
-
-<!-- CAPTURA: Plugin MariaDB configurado y conectado -->
-> 📸 *Insertar captura del plugin configurado con las credenciales*
-
-> ⚠️ **Nota:** [Indicar si la conexión funcionó correctamente o si hubo algún problema]
 
 ---
 
@@ -219,8 +166,8 @@ stream-19629.ts  stream-19636.ts  stream-19643.ts  stream-19650.ts  stream.m3u8
 ...
 ```
 
-<!-- CAPTURA: Directorio con segmentos .m3u8 y .ts -->
-> 📸 *Insertar captura del directorio con los ficheros .m3u8 y .ts generados*
+<img width="647" height="108" alt="image" src="https://github.com/user-attachments/assets/6295aa69-049d-4777-8204-e97333424139" />
+
 
 ### 8.2 Resumen de formatos y protocolos
 
@@ -242,15 +189,7 @@ stream-19629.ts  stream-19636.ts  stream-19643.ts  stream-19650.ts  stream.m3u8
 | Servicio  | Estado          | Puerto | Observaciones                     |
 |-----------|-----------------|--------|-----------------------------------|
 | Jellyfin  | ✅ Activo       | 8096   | Accesible desde el navegador      |
-| MariaDB   | ⚠️ Parcial      | 3306   | Plugin instalado                  |
 | AWS SG    | ✅ Configurado  | 8096   | Abierto desde 0.0.0.0/0           |
-
-### Acceso final verificado
-
-URL de acceso: `http://13.61.226.XX:8096`
-
-<!-- CAPTURA FINAL: Dashboard con la biblioteca y el vídeo indexado -->
-> 📸 *Insertar captura final del dashboard mostrando el servicio operativo*
 
 ---
 
