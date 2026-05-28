@@ -207,7 +207,7 @@ Acceso via HTTPS: [https://innovatetech-g2.ddns.net](https://innovatetech-g2.ddn
 
 ## 8. Prueba de sonido
 
-> [prueba de sonido de la videoconferencia.webm](https://github.com/user-attachments/assets/a7319a44-63eb-48c1-929b-f12781b22991)
+> [prueba de sonido de la videoconferencia.webm](https://github.com/user-attachments/assets/8a6b6db5-3c1e-4650-be4e-e5fa703a1dba)
 
 
 ---
