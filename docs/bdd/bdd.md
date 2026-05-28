@@ -24,7 +24,7 @@
 
 En este apartado se documenta la implementación de la base de datos de InnovateTech utilizando MariaDB sobre AWS EC2.
 
-La base de datos permite gestionar empleados, clientes, videollamadas, auditoría y backups automáticos mediante triggers y eventos programados.
+La base de datos permite gestionar empleados, clientes, videollamadas y sistemas automáticos de auditoría y backup mediante triggers y eventos programados.
 
 ---
 
@@ -249,17 +249,76 @@ Script utilizado:
 backup_completo_innovatetech_db.sh
 ```
 
+También se realizó una ejecución manual del script `backup_completo_innovatetech_db.sh` para verificar el correcto funcionamiento de la compresión automática de backups.
+
+```bash
+sudo sh backup_completo_innovatetech_db.sh
+```
+
+> <img width="577" height="211" alt="image" src="https://github.com/user-attachments/assets/8f84614b-90a4-47e2-9b5e-3a236cab57a3" />
+
+También se verificó que el archivo comprimido generado contuviera correctamente los backups exportados por MariaDB.
+
+```bash
+ls -l backups
+```
+
+> <img width="553" height="49" alt="image" src="https://github.com/user-attachments/assets/9b40777a-cfcd-4374-8b7d-91a8ded44c7c" />
+
+
+Se realizó además una comprobación manual del fichero ZIP generado.
+
+```bash
+cat backup_*.zip
+```
+
+> <img width="1442" height="276" alt="image" src="https://github.com/user-attachments/assets/65fa20d1-4f7a-4774-ac52-ca76157db8b4" />
+
+
+El resultado mostrado corresponde a datos binarios comprimidos, indicando que el fichero ZIP fue generado correctamente.
+
+
 Se verifica el scheduler con:
 
 ```sql
 SHOW EVENTS;
 ```
 
-Y se comprueba la compresión automática con:
+Durante las pruebas del sistema automático de backups se detectó un problema de permisos sobre el directorio utilizado por MariaDB para generar los archivos CSV.
+
+Para solucionarlo, se modificó el propietario del directorio `/var/lib/mysql/backups` asignándolo al usuario `mysql`, permitiendo así que MariaDB pudiera escribir correctamente los archivos generados por el evento automático.
+
+```bash
+sudo chown mysql:mysql /var/lib/mysql/backups
+sudo chmod 755 /var/lib/mysql/backups
+```
+
+Se verificaron los permisos del directorio utilizado por MariaDB para generar los backups automáticos.
+
+```bash
+ls -ld /var/lib/mysql/backups
+```
+
+> <img width="528" height="56" alt="image" src="https://github.com/user-attachments/assets/f956cae3-f284-4a8b-9e38-7675ae672075" />
+
+
+Posteriormente se comprobó que los archivos CSV se generaban correctamente dentro del directorio configurado.
+
+```bash
+ls -l /var/lib/mysql/backups
+```
+
+> <img width="536" height="116" alt="image" src="https://github.com/user-attachments/assets/30161b1c-29fa-43b9-a801-7f9e694aca8d" />
+
+
+Y se configura de forma automática la ejecución del script en crontab:
 
 ```bash
 crontab -l
 ```
+
+> <img width="563" height="397" alt="image" src="https://github.com/user-attachments/assets/32cad548-3025-4aaf-80d0-fdddfcfe943d" />
+
 
 También se consulta la tabla:
 
